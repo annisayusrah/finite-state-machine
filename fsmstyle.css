@@ -1,0 +1,224 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS MICRO CLEARFIX*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/*FONT*/
+@font-face
+{
+    font-family: font;
+    src: url(CODE\ Bold.otf);
+}
+
+@font-face{
+    font-family: content_font;
+    src: url(Gontserrat-Light.ttf)
+}
+
+/*BODY*/
+body
+{
+    background-image: url(stripes-light.png);
+    background-attachment: fixed;
+    background-color: white;
+    font-family: "font";
+    margin: 1cm;
+}
+
+span
+{
+    font-style: italic;
+}
+
+/*HEADER*/
+h1
+{
+    text-align: center;
+    font-size: 55px;
+    margin: 1cm auto;
+}
+
+h1,h2,h3
+{
+    color: #819C4B;
+    line-height: 2cm;
+    text-align: center;
+}
+
+.header
+{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2cm;
+    background-color: #323B20;
+    border: 7px inset #819C4B;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.header ul li
+{
+    display: inline-block;
+    font-family: "content_font";
+}
+
+.header a
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration: none;
+    color: #819C4B;
+}
+
+.header a:hover
+{
+    color: #F1EEE5;
+    border: 3px solid #819C4B;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*BODY*/
+.content
+{
+    font-size: 45px;
+}
+
+.content h3
+{
+    font-size: 35px;
+}
+
+.content p
+{
+    margin: auto 2cm;
+    font-size: 20px;
+    background-color: #323B20;
+    line-height: 1.3cm;
+    text-align: justify;
+    padding: 43px;
+    color: #F1EEE5;
+    border: 7px inset #819C4B;
+    border-radius: 20px;
+    font-family: content_font;
+}
+
+
+.content img
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 0.3cm;
+    border: 3px dotted #323B20;
+}
+
+.content figure
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+.reference 
+{
+    background-color: #323B20;
+    border: 7px inset #819C4B;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 15px;
+}
+
+.reference h3
+{
+    font-size: 30px;
+}
+
+.reference ul li
+{
+    font-family: "content_font";
+    display: inline-block;
+}
+
+.reference a
+{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1cm;
+    margin: auto 3cm;
+    text-decoration: none;
+    color: #819C4B;
+}
+
+.reference a:hover
+{
+    color: #F1EEE5;
+    border: 3px solid #819C4B;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.footer p
+{
+    text-align: center;
+    margin: 1cm auto;
+    font-size: 20px;
+}
+
+
